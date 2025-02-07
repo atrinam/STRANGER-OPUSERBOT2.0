@@ -17,17 +17,18 @@ async def self_media(client, message):
         await client.send_document("me", location)
         os.remove(location)
     except Exception as e:
-        print("Error: `{e}`")
+        print(f"خطا: {e}")
         return
 
 
-__NAME__ = "Sᴇʟғ"
+__NAME__ = "ذخیره‌ساز"
 __MENU__ = f"""
-**🥀 Download And Save Self\n» Destructed Photo Or Video
-To Your Saved Message ✨**
+**🥀 دانلود و ذخیره عکس و ویدیوهای 
+خودنابودشونده در پیام‌های ذخیره شده ✨**
 
-`.op` - Use This Command By\nReplying On Self-Destructed
-Photo/Video.
+`.op` - این دستور را با ریپلای روی 
+عکس/ویدیو خودنابودشونده استفاده کنید.
 
-**🌿 More Commands:**\n=> [😋🥰, wow, super, 😋😍]
+**🌿 دستورات دیگر:**
+[😋🥰, wow, super, 😋😍]
 """
